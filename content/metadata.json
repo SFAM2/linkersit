@@ -1,0 +1,44 @@
+{
+  "404": {
+    "title": "Page not found — LinkersIT",
+    "description": "This page could not be found. Return to LinkersIT.",
+    "noindex": true,
+    "schema": null
+  },
+  "index": {
+    "title": "LinkersIT | Technology Consulting & Product Delivery",
+    "description": "Technology consulting and hands-on delivery for consulting firms, enterprises and startups. LinkersIT connects strategy, engineering and product design across Paris and Tunis.",
+    "noindex": false,
+    "schema": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"./#organization\",\"name\":\"LinkersIT\",\"email\":\"contact@linkersit.com\",\"description\":\"Technology consulting and delivery for consulting firms, enterprise teams and startups, with a team positioned in Paris and Tunis.\",\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Consulting and delivery services\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Technology consulting\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Web & mobile engineering\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Startup & MVP support\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Product design & growth\"}}]}}"
+  },
+  "about": {
+    "title": "About LinkersIT | Technology Consulting in Paris & Tunis",
+    "description": "Meet LinkersIT, a technology consulting and delivery partner for consulting firms, enterprise teams and startups, connecting Paris and Tunis.",
+    "noindex": false,
+    "schema": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"./#organization\",\"name\":\"LinkersIT\",\"email\":\"contact@linkersit.com\",\"description\":\"Technology consulting and delivery for consulting firms, enterprise teams and startups, with a team positioned in Paris and Tunis.\",\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Consulting and delivery services\",\"itemListElement\":[{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Technology consulting\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Web & mobile engineering\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Startup & MVP support\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Product design & growth\"}}]}}"
+  },
+  "privacy": {
+    "title": "Privacy notice — LinkersIT",
+    "description": "How information is handled when you browse this site or start a conversation with LinkersIT.",
+    "noindex": true,
+    "schema": null
+  },
+  "cookies": {
+    "title": "Cookies & browser storage — LinkersIT",
+    "description": "A clear view of what this website stores in your browser.",
+    "noindex": false,
+    "schema": null
+  },
+  "terms": {
+    "title": "Terms of use — LinkersIT",
+    "description": "Information about using the LinkersIT website and making an enquiry.",
+    "noindex": true,
+    "schema": null
+  },
+  "legal": {
+    "title": "Legal notice — LinkersIT",
+    "description": "Publisher and contact information for the LinkersIT website.",
+    "noindex": true,
+    "schema": null
+  }
+}

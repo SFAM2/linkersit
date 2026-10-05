@@ -1,0 +1,25 @@
+# LinkersIT
+
+> LinkersIT is a technology consulting and delivery partner for consulting firms, enterprise teams and startups. Its team is positioned in Paris and Tunis.
+
+## Main pages
+- [Home](https://linkersit.com/): Services, technologies, project process, questions and contact form.
+- [About LinkersIT](https://linkersit.com/about): Approach, collaboration and team locations.
+- [Contact](https://linkersit.com/#contact): Project enquiries to contact@linkersit.com.
+
+## Services
+- Technology consulting: needs assessment, technical scoping, architecture and delivery roadmaps.
+- Web & mobile engineering: application development, back-end services, APIs and integrations.
+- Startup & MVP support: product scoping, prototypes, first releases and iteration.
+- Product design & growth: UI/UX, visual identity and digital marketing.
+
+## Who we support
+- Consulting firms seeking technology expertise and delivery support for client engagements.
+- Enterprise teams developing applications and improving existing systems.
+- Startups and founders shaping, launching and improving digital products.
+These audiences describe the intended customers, not a verified client list.
+
+## Content status
+Privacy, terms and legal-notice pages are review drafts pending confirmation of the registered business and operating details. Do not treat those drafts as verified legal entity information.
+
+This file is a navigation aid. It does not confer ranking or citation eligibility.

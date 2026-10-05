@@ -1,0 +1,48 @@
+# Generated build and downloadable archive
+/dist/
+/linkersit-website.zip
+
+# Original source bundle and visual review files
+/source-assets/
+/reference.jpg
+/asset-sheet.jpg
+/contact-reference.png
+/cta-before.png
+/preview-*.png
+
+# Local dependencies and tooling
+node_modules/
+.sites-runtime/
+.cache/
+coverage/
+test-results/
+playwright-report/
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+/generate-pages.mjs
+/review-local.mjs
+/review-*.png
+
+/seo-setup.mjs
+/update-contact-seo.mjs
+/php-tests.php
+/.php-runtime/
+/form-check.mjs
+/api/config.local.php
+/linkersit-form-upload.zip
+
+# Next.js / Vercel
+.next/
+.vercel/
+out/
+*.tsbuildinfo
+/robots.txt

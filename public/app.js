@@ -1,22 +1,3 @@
-document.documentElement.classList.add('js-enabled');
-const menuButton = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('#navigation');
-function closeMenu() {
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', 'Open menu');
-  navigation.classList.remove('open');
-}
-menuButton.addEventListener('click', () => {
-  const open = menuButton.getAttribute('aria-expanded') !== 'true';
-  menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  navigation.classList.toggle('open', open);
-});
-navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-document.addEventListener('keydown', event => { if (event.key === 'Escape' && navigation.classList.contains('open')) { closeMenu(); menuButton.focus(); } });
-document.addEventListener('click', event => { if (!event.target.closest('.nav')) closeMenu(); });
-window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
-
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.documentElement.classList.add('js-reveal');
   const observer = new IntersectionObserver(entries => {
@@ -36,22 +17,14 @@ document.querySelectorAll('[data-service]').forEach(card => {
 function openEmail(subject, body) {
   window.location.href = `mailto:contact@linkersit.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
-document.querySelector('#contact-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const values = new FormData(event.currentTarget);
-  const name = [values.get('firstName'), values.get('lastName')].filter(Boolean).join(' ');
-  const service = values.get('service') || 'A new project';
-  const body = `Hello LinkersIT,\n\n${values.get('message')}\n\nService: ${service}\nName: ${name}\nEmail: ${values.get('email')}${values.get('phone') ? '\nPhone: ' + values.get('phone') : ''}`;
-  openEmail(`Project enquiry — ${service}`, body);
-  document.querySelector('#form-status').textContent = 'Your email draft is ready to open. Send it from your email app to contact us. If no app opened, email contact@linkersit.com directly. Your details remain here.';
-});
+
 document.querySelector('#updates-form').addEventListener('submit', event => {
   event.preventDefault();
   const email = new FormData(event.currentTarget).get('email');
   openEmail('Request for LinkersIT news and updates', `Hello LinkersIT,\n\nI would like to receive your news and updates at ${email}.\n\nThank you.`);
   document.querySelector('#updates-status').textContent = 'Send the request from your email app to ask for updates. If it did not open, email contact@linkersit.com.';
 });
-document.querySelector('#year').textContent = new Date().getFullYear();
+
 
 // Gentle perspective follows the pointer while the inner artwork floats independently.
 const globe = document.querySelector('.about-art');
@@ -67,15 +40,7 @@ globe.addEventListener('pointermove', event => {
 function resetGlobeTilt() { globeTilt.style.removeProperty('--tilt-x'); globeTilt.style.removeProperty('--tilt-y'); }
 globe.addEventListener('pointerleave', resetGlobeTilt);
 motionPreference.addEventListener('change', resetGlobeTilt);
-document.querySelector('.motion-toggle').setAttribute('aria-label', 'Pause 3D and text animations');
-document.querySelector('.motion-toggle').addEventListener('click', event => {
-  const paused = document.documentElement.classList.toggle('motion-paused');
-  const button = event.currentTarget;
-  button.setAttribute('aria-pressed', String(paused));
-  button.setAttribute('aria-label', `${paused ? 'Resume' : 'Pause'} 3D and text animations`);
-  button.querySelector('use').setAttribute('href', `assets/icons.svg#${paused ? 'play' : 'pause'}`);
-  resetGlobeTilt();
-});
+
 if ('IntersectionObserver' in window) {
   const motionObserver = new IntersectionObserver(entries => {
     for (const entry of entries) entry.target.classList.toggle('motion-off', !entry.isIntersecting);
